@@ -1,7 +1,21 @@
 import React from 'react';
+import {createHashRouter, RouterProvider} from "react-router-dom";
+import Area from "./Area";
+import Summary from "./dungeon/Summary";
+
 import logo from '../diablo4_logo2.png';
 import './App.scss';
-import Summary from "./dungeon/Summary";
+
+const router = createHashRouter([
+    {
+        path: '/',
+        element: <Summary/>
+    },
+    {
+        path: '/area',
+        element: <Area/>
+    }
+])
 
 function App() {
     return (
@@ -20,7 +34,7 @@ function App() {
                 {/*        Learn React*/}
                 {/*    </a>*/}
             </header>
-            <Summary/>
+            <RouterProvider router={router}/>
         </div>
     );
 }

@@ -1,4 +1,4 @@
-import {ConfigProvider, Image, Table} from "antd/lib";
+import {ConfigProvider, Image, Table, Typography} from "antd/lib";
 import React from "react";
 import dungeons from "../../datasources/dungeons.json";
 import './Summary.scss';
@@ -25,7 +25,10 @@ function DungeonSummary() {
                         key: "category1",
                         dataIndex: "category1",
                         title: "지역",
-                        align: "center"
+                        align: "center",
+                        render: (val: string) => {
+                            return <Typography.Link href={`#/area?name=${val}`}>{val}</Typography.Link>
+                        }
                     },
                     {
                         key: "dungeon_name",
