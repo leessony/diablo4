@@ -1,6 +1,5 @@
 
 .App {
-  font-family: 'Hahmlet', sans-serif;
   text-align: center;
   background: rgb(9, 8, 8);
   background: linear-gradient(180deg, rgba(9, 8, 8, 1) 12%, rgba(230, 8, 8, 1) 20%, rgba(252, 176, 69, 1) 100%);
@@ -21,17 +20,6 @@
 
     .App-link {
       color: #61dafb;
-    }
-  }
-
-  .dungeon-contents {
-
-    .dungeon-table {
-      padding: 50px;
-
-      .ant-table-thead {
-        font-family: 'Hahmlet', sans-serif;
-      }
     }
   }
 }
