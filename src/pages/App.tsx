@@ -5,6 +5,9 @@ import dungeons from "../datasources/dungeons.json";
 import './App.scss';
 
 function App() {
+    const parsedDungeons = dungeons.map((item: any, idx: number) => {
+        return {...item, no: idx + 1}
+    })
     return (
         <div className="App">
             <header className="App-header">
@@ -26,6 +29,13 @@ function App() {
                     pagination={{position: ["topRight", "bottomRight"], defaultPageSize: 50, size: "small"}}
                     columns={[
                         {
+                            key: "no",
+                            dataIndex: "no",
+                            title: "순서",
+                            align: "center",
+                            width: 30
+                        },
+                        {
                             key: "category1",
                             dataIndex: "category1",
                             title: "지역",
@@ -44,7 +54,7 @@ function App() {
                             title: "던전지도",
                             align: "center",
                             render: (val: string) => {
-                                return <Image src={val} width={80}/>
+                                return val ? <Image src={val} width={80}/> : <span>-</span>
                             }
                         },
                         {
@@ -53,7 +63,7 @@ function App() {
                             title: "던전설명",
                             align: "center",
                             render: (val: string) => {
-                                return <Image src={val} width={80}/>
+                                return val ? <Image src={val} width={80}/> : <span>-</span>
                             }
                         },
                         {
@@ -71,7 +81,7 @@ function App() {
                             }
                         }
                     ]}
-                    dataSource={dungeons}
+                    dataSource={parsedDungeons}
                 />
             </article>
         </div>
