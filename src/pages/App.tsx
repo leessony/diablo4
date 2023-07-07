@@ -27,7 +27,7 @@ function App() {
             <article className="dungeon-contents">
                 <ConfigProvider theme={{components: {Pagination: {colorPrimary: '#F94709'}}}}>
                     <Table
-                        style={{fontFamily: 'Akatab'}}
+                        bordered
                         className="dungeon-table"
                         pagination={{position: ["topRight", "bottomRight"], defaultPageSize: 50, size: "small"}}
                         columns={[
