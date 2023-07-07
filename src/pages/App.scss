@@ -1,14 +1,35 @@
+
 .App {
+  font-family: 'Hahmlet', sans-serif;
   text-align: center;
+  background: rgb(9, 8, 8);
+  background: linear-gradient(180deg, rgba(9, 8, 8, 1) 12%, rgba(230, 8, 8, 1) 20%, rgba(252, 176, 69, 1) 100%);
 
-  .dungeons {
-    margin: 30px;
+  .App-header {
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+
+    .App-logo {
+      height: 40vmin;
+      pointer-events: none;
+    }
+
+    .App-link {
+      color: #61dafb;
+    }
   }
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  .dungeon-contents {
+
+    .dungeon-table {
+      padding: 50px
+    }
+  }
 }
 
 //@media (prefers-reduced-motion: no-preference) {
@@ -16,21 +37,6 @@
 //    animation: App-logo-spin infinite 20s linear;
 //  }
 //}
-
-.App-header {
-  background-color: #000000;
-  min-height: 40vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
