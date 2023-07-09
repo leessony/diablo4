@@ -3,8 +3,39 @@
   .dungeon-table {
     padding: 50px;
 
-    .ant-table-thead {
+    a {
       font-family: 'Hahmlet', sans-serif;
+      color: #ea4646;
+      font-size: 16px;
+    }
+
+    .ant-table-content {
+      font-family: 'Hahmlet', sans-serif;
+
+      .ant-table-thead > tr > th {
+        font-size: 20px;
+        color: #281c1c;
+        background: #8d8d8d;
+      }
+
+      .ant-table-tbody {
+        font-size: 16px;
+      }
+
+      .ant-table-tbody .ant-table-row:nth-child(odd) {
+        color: #bdbdbd;
+        background-color: #2f2121;
+        border: #e60808 1px solid;
+      }
+
+      .ant-table-tbody .ant-table-row:nth-child(even) {
+        color: #bdbdbd;
+        background-color: #2f2121;
+      }
+
+      .ant-table-tbody .ant-table-row:hover > td {
+        background-color: #544545;
+      }
     }
   }
 }

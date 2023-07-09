@@ -19,7 +19,7 @@ function DungeonSummary() {
                         dataIndex: "no",
                         title: "순서",
                         align: "center",
-                        width: 60
+                        width: 80
                     },
                     {
                         key: "category1",
