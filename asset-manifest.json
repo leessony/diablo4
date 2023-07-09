@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/diablo4/static/css/main.efdbaca0.css",
-    "main.js": "/diablo4/static/js/main.342007f5.js",
+    "main.js": "/diablo4/static/js/main.bfa474e5.js",
     "static/js/787.a904b0d7.chunk.js": "/diablo4/static/js/787.a904b0d7.chunk.js",
     "static/media/diablo4_logo2.png": "/diablo4/static/media/diablo4_logo2.84c652b422ae1a25ba4f.png",
     "index.html": "/diablo4/index.html",
     "static/media/index.cjs": "/diablo4/static/media/index.433019db0fc741f26829.cjs",
     "main.efdbaca0.css.map": "/diablo4/static/css/main.efdbaca0.css.map",
-    "main.342007f5.js.map": "/diablo4/static/js/main.342007f5.js.map",
+    "main.bfa474e5.js.map": "/diablo4/static/js/main.bfa474e5.js.map",
     "787.a904b0d7.chunk.js.map": "/diablo4/static/js/787.a904b0d7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.efdbaca0.css",
-    "static/js/main.342007f5.js"
+    "static/js/main.bfa474e5.js"
   ]
 }
