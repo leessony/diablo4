@@ -3,7 +3,6 @@ import {createHashRouter, RouterProvider} from "react-router-dom";
 import Area from "./Area";
 import Summary from "./dungeon/Summary";
 
-import logo from '../diablo4_logo2.png';
 import './App.scss';
 
 const router = createHashRouter([
@@ -20,8 +19,7 @@ const router = createHashRouter([
 function App() {
     return (
         <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo"/>
+            <header id="header" className="App-header">
                 {/*    <p>*/}
                 {/*        Edit <code>src/App.tsx</code> and save to reload.*/}
                 {/*    </p>*/}
@@ -34,7 +32,9 @@ function App() {
                 {/*        Learn React*/}
                 {/*    </a>*/}
             </header>
-            <RouterProvider router={router}/>
+            <div id="content">
+                <RouterProvider router={router}/>
+            </div>
         </div>
     );
 }
