@@ -71,6 +71,7 @@ function DungeonSummary() {
                     }
                 ]}
                 dataSource={parsedDungeons}
+                scroll={{y: "2400px"}}
             />
         </ConfigProvider>
     </article>
